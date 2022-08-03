@@ -1,0 +1,60 @@
+$background-profile: #082a33;
+
+.profile {
+    background: #FFFFFF;
+    padding: 0 1.5rem 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: .5rem;
+    border: 1px solid #e6e6e6;
+    transform: translateY(-40px);
+    &Avatar {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        &Img {
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 10px solid $background-profile;
+            transform: translateY(-50%);
+            background: $background-profile;
+        }
+    }
+    &Title{
+        text-align: center;
+    }
+    &Bio {
+        text-align: center;
+    }
+    &Infos {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+          }
+        &Item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: #AAAAAA;
+            fill: #AAAAAA;
+            text-decoration: none;
+            &:not(span):hover{
+                color: #000000;
+                fill: #000000;
+            }
+        }
+    }
+}
+
+.wrapper {
+    border-top: 120px solid $background-profile;
+}

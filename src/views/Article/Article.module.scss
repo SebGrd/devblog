@@ -1,0 +1,40 @@
+.article {
+    &Image {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        transform: scale(1.05);
+    }
+    &Content {
+        font-size: 1.3rem;
+        word-spacing: 2px;
+        line-height: 1.4;
+    }
+    &Taglist {
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        &Item {
+            text-decoration: none;
+            margin-right: .5rem;
+            margin-bottom: .5rem;
+            border-radius: .25rem;
+            color: #222222;
+            font-size: 1em;
+            font-weight: bold;
+        }
+    }
+    &Date {
+        margin-top: 0;
+        color: rgb(82, 82, 82);
+        font-size: .75rem;
+    }
+}

@@ -1,0 +1,63 @@
+.article {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    margin-bottom: .5rem;
+    border: 1px solid #e6e6e6;
+
+    &Date {
+        margin-top: 0;
+        color: rgb(82, 82, 82);
+        font-size: .75rem;
+    }
+
+    &Title {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: .5rem;
+
+        a {
+            color: #222222;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &Taglist {
+        margin-top: 0;
+        margin-bottom: 0;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+
+        &Item {
+            text-decoration: none;
+            margin-right: .5rem;
+            margin-bottom: .5rem;
+            border-radius: .25rem;
+            color: #222222;
+            font-size: .75rem;
+            font-weight: bold;
+        }
+    }
+
+    &Content {
+        font-size: 0.85rem;
+        word-break: break-word;
+    }
+
+    &Readtime {
+        margin-top: 0;
+        margin-bottom: 0;
+        color: rgb(82, 82, 82);
+        font-size: .75rem;
+        text-align: right;
+    }
+}
