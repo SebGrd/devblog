@@ -66,7 +66,7 @@ export default function Articles() {
             <Profile />
             <div className="container">
                 <h1>Latest articles</h1>
-                {articles?.length < 1 ? <h2 style={{fontWeight: 400, fontStyle: 'italic'}}>I still haven't post any article 😞</h2>: null}
+                {articles?.length < 1 ? <h2 style={{fontWeight: 400, fontStyle: 'italic'}}>I still haven't posted any article 😞</h2>: null}
                 {loading && useLoop(maxArticleNumber).map((x, i) => <Skeleton width="100%" height="218px" key={i} />)}
                 {error && <p>{error.message}</p>}
                 {articles && articles.slice(0, maxArticleNumber - 1).map(article => <Article article={article} key={article.id} />)}
